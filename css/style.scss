@@ -1,0 +1,395 @@
+@font-face {
+	font-family: "PT Sans Regular";
+	font-weight: 400;
+	font-style: normal;
+	src: local("PT Sans"), local("PTSans-Regular"),
+	url("../fonts/ptsans.woff2") format("woff2"),
+	url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PT Sans Bold";
+	font-weight: 400;
+	font-style: normal;
+	src: local("PT Sans Bold"), local("PTSans-Bold"),
+	url("../fonts/ptsansbold.woff2") format("woff2"),
+	url("../fonts/ptsansbold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "CuprumRegular";
+	font-weight: 400;
+	font-style: normal;
+	src: local("Cuprum"), local("Cuprum-Regular"),
+	url("../fonts/cuprum.woff2") format("woff2"),
+	url("../fonts/cuprum.woff") format("woff");
+}
+
+@font-face {
+	font-family: "CuprumBold";
+	font-weight: 400;
+	font-style: normal;
+	src: local("Cuprum Bold"), local("Cuprum-Bold"),
+	url("../fonts/cuprumbold.woff2") format("woff2"),
+	url("../fonts/cuprumbold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "CuprumItalic";
+	font-weight: 400;
+	font-style: normal;
+	src: local("Cuprum Italic"), local("Cuprum-Italic"),
+	url("../fonts/cuprumitalic.woff2") format("woff2"),
+	url("../fonts/cuprumitalic.woff") format("woff");
+}
+
+@font-face {
+	font-family: "CuprumBoldItalic";
+	font-weight: 400;
+	font-style: normal;
+	src: local("Cuprum Bold Italic"), local("Cuprum-Bold-Italic"),
+	url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+	url("../fonts/cuprumbolditalic.woff") format("woff");
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "CuprumRegular", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000;
+	background-color: #fff;
+}
+
+.page-header {
+	background-color: #f3f7f9;
+}
+
+.user-nav {
+	background-color: #293449;
+
+	.container {
+		display: flex;
+		height: 42px;
+	}
+}
+
+.page-header-logo {
+	padding: 10px 56px;
+	height: 47px;
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 24px;
+	color: #fff;
+	background-color: #ee3643;
+	box-shadow: inset 0 -5px rgba(0, 0, 0, .24);
+
+	&[href]:hover,
+	&[href]:focus {
+		background-color: #ca2c37;
+	}
+
+	&[href]:active {
+		background-color: #ba2732;
+	}
+}
+
+.form-search {
+	position: relative;
+
+	input {
+		display: block;
+		width: 270px;
+		height: 100%;
+		padding-left: 47px;
+		font-family: inherit;
+		font-size: 17px;
+		line-height: 18px;
+		color: #000;
+		background-color: transparent;
+		border: none;
+		transition: background-color .3s;
+	}
+
+	input:hover {
+		background-color: #212a3a;
+	}
+
+	input:focus {
+		background-color: #fff;
+	}
+
+	input::-webkit-input-placeholder {
+		font-size: 17px;
+		line-height: 18px;
+		color: #fff;
+	}
+
+	input:-ms-input-placeholder {
+		font-size: 17px;
+		line-height: 18px;
+		color: #fff;
+	}
+
+	input::-ms-input-placeholder {
+		font-size: 17px;
+		line-height: 18px;
+		color: #fff;
+	}
+
+	input::placeholder {
+		font-size: 17px;
+		line-height: 18px;
+		color: #fff;
+	}
+
+	button {
+		position: absolute;
+		top: -1px;
+		left: 1px;
+		height: 100%;
+		width: 47px;
+		font-size: 0;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+
+		svg {
+			fill: rgba(255, 255, 255, .3);
+		}
+	}
+
+	button:hover svg,
+	button:focus svg {
+		fill: #fff;
+	}
+
+	button:active svg {
+		fill: rgba(255, 255, 255, .5);
+	}
+
+	input:focus ~ button svg {
+		fill: #ee3643;
+	}
+}
+
+.user-nav-item {
+	width: 150px;
+	font-size: 17px;
+	line-height: 42px;
+	color: #fff;
+
+	&:hover,
+	&:focus {
+		background-color: #212a3a;
+	}
+
+	&:active {
+		color: rgba(255, 255, 255, .6);
+		background-color: #161d29;
+	}
+}
+
+.user-nav-bookmarks {
+	position: relative;
+	padding-left: 43px;
+
+	&::before {
+		content: url(../img/icons/icon-bookmark.svg);
+		position: absolute;
+		top: 2px;
+		left: 16px;
+		width: 14px;
+		height: 16px;
+		opacity: .3;
+	}
+
+	&:hover::before,
+	&:focus::before {
+		opacity: 1;
+	}
+
+	&:active::before {
+		opacity: .5;
+	}
+}
+
+.user-nav-basket {
+	position: relative;
+	padding-left: 48px;
+
+	&::before {
+		content: url(../img/icons/icon-basket.svg);
+		position: absolute;
+		top: 1px;
+		left: 17px;
+		width: 15px;
+		height: 15px;
+		opacity: .3;
+	}
+
+	&:hover::before,
+	&:focus::before {
+		opacity: 1;
+	}
+
+	&:active::before {
+		opacity: .5;
+	}
+}
+
+.user-nav-checkout {
+	text-align: center;
+	background-color: #63a63e;
+
+	&:hover,
+	&:focus {
+		background-color: #5fbb2d;
+	}
+
+	&:active {
+		color: rgba(255, 255, 255, .5);
+		background-color: #518534;
+	}
+}
+
+
+.header-info {
+	display: flex;
+	justify-content: space-between;
+	padding: 46px 0 44px 53px;
+}
+
+.header-info-desc {
+	margin: 0;
+	margin-top: 3px;
+	width: 210px;
+	font-family: "CuprumItalic";
+	font-size: 16px;
+	line-height: 23px;
+	color: #ee3643;
+}
+
+.header-info-contacts {
+	margin: 0 auto;
+
+	.tel {
+		position: relative;
+		margin: 0;
+		margin-bottom: 4px;
+		width: 270px;
+		height: 45px;
+		padding: 10px 0 10px 70px;
+		border: 3px solid #fff;
+
+		&::before {
+			content: url(../img/icons/icon-phone.svg);
+			position: absolute;
+			top: 10px;
+			left: 12px;
+			width: 19px;
+			height: 19px;
+		}
+
+		a {
+			font-size: 21px;
+			line-height: 21px;
+			
+			color: #e9292a;
+		}
+	}
+
+	.adds {
+		margin: 0;
+		font-size: 14px;
+		text-align: center;
+		color: #32425c;
+	}
+}
+
+.header-info-btn {
+	margin-left: 10px;
+	height: 45px;
+	font-family: inherit;
+	font-size: 21px;
+	line-height: 21px;
+	background-color: #fff;
+	border: none;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		color: #ee3643;
+	}
+
+	&:active {
+		color: rgba(0, 0, 0, .3);
+	}
+}
+
+.btn-sign-in {
+	position: relative;
+	padding: 0 26px 0 47px;
+
+	&::before {
+		content: url(../img/icons/icon-login.svg);
+		position: absolute;
+		top: 14px;
+		left: 13px;
+		width: 20px;
+		height: 17px;
+		opacity: .3;
+	}
+
+	&:hover::before,
+	&:focus::before {
+		opacity: 1;
+	}
+
+	&:active::before {
+		opacity: .3;
+	}
+}
+
+.btn-sign-up {
+	padding: 0 24px;
+}
+
