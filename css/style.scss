@@ -702,12 +702,12 @@ body {
 	animation-duration: 1s;
 }
 
-.goods-title {
+.popular-title {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 	margin-bottom: 20px;
-	padding: 25px 24px 24px 28px;
+	padding: 25px 24px 24px;
 	height: 89px;
 	background-color: #f9f5f0;
 
@@ -721,7 +721,9 @@ body {
 	}
 
 	.btn {
-		padding: 10px 54px;
+		padding: 10px 0px;
+		text-align: center;
+		min-width: 253px;
 	}
 }
 
@@ -738,7 +740,7 @@ body {
 	width: 220px;
 	min-height: 318px;
 	margin: 0 0 21px 20px;
-	padding: 10px 14px 21px; 
+	padding: 10px 17px 20px; 
 	font-family: "PT Sans Bold", sans-serif;
 	text-align: center;
 	border: 1px solid #eaeaea;
@@ -765,7 +767,8 @@ body {
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		height: 170px;
+		height: 150px;
+		margin-bottom: 19px;
 
 		img {
 			transform: scale(1);
@@ -880,6 +883,39 @@ body {
 		&:active {
 			color: rgba(50, 66, 92, .3);
 			border-color: rgba(50, 66, 92, .3);
+		}
+	}
+}
+
+.manufacturers-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -20px;
+}
+
+.manufacturer-item {
+	margin: 0 0 20px 20px;
+
+	.manufacturer-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 220px;
+		height: 145px;
+		border: 1px solid #eaeaea;
+		transition: box-shadow .3s;
+
+		&:hover,
+		&:focus {
+			box-shadow: 0 10px 25px rgba(41, 52, 73, .5);
+		}
+
+		&:active {
+			box-shadow: 0 4px 10px rgba(41, 52, 73, .5);
+		}
+
+		&:active img {
+			opacity: .3;
 		}
 	}
 }
