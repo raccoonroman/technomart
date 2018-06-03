@@ -108,6 +108,7 @@ input[type="radio"].visually-hidden {
 	background-color: #ee3643;
 	border: none;
 	border-radius: 3px;
+	cursor: pointer;
 	transition: background-color .3s;
 
 	&:hover,
@@ -923,7 +924,6 @@ body {
 
 .services {
 	padding-top: 65px;
-	padding-bottom: 64px;
 	background-color: #f4f8f9;
 }
 
@@ -992,7 +992,7 @@ body {
 }
 
 .services-slider-item {
-	height: 282px;
+	height: 283px;
 
 	h3 {
 		margin: 0;
@@ -1032,5 +1032,93 @@ body {
 
 	.btn {
 		padding: 10px 45px;
+	}
+}
+
+.about-us-and-contacts {
+	display: flex;
+	justify-content: space-between;
+	padding: 79px 0 86px;
+}
+
+.about-us {
+	width: 520px;
+
+	h2 {
+		margin: 0;
+		margin-bottom: 26px;
+		font-size: 30px;
+		line-height: 30px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	p {
+		margin: 0;
+		font-family: "PT Sans Regular", sans-serif;
+	}
+
+	p:nth-of-type(1) {
+		margin-bottom: 25px;
+	}
+
+	p:nth-of-type(2) {
+		margin-bottom: 20px;
+	}
+
+	ul {
+		margin-bottom: 36px;
+	}
+
+	li {
+		position: relative;
+		margin-bottom: 20px;
+		padding-left: 37px;
+		font-size: 18px;
+		line-height: 20px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			margin-top: -1px;
+			width: 25px;
+			height: 2px;
+			background-color: #ee3643;
+		}
+	}
+
+	.btn {
+		padding: 10px 40px;
+	}
+}
+
+.contacts {
+
+	h2 {
+		margin: 0;
+		margin-bottom: 26px;
+		font-size: 30px;
+		line-height: 30px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	p {
+		margin: 0;
+		margin-bottom: 31px;
+		font-family: "PT Sans Regular", sans-serif;
+	}
+
+	img {
+		display: block;
+		margin-bottom: 40px;
+	}
+
+	.btn {
+		display: block;
+		padding: 10px 0;
+		text-align: center;
 	}
 }
