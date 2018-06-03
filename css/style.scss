@@ -711,7 +711,7 @@ body {
 	height: 89px;
 	background-color: #f9f5f0;
 
-	h3 {
+	h2 {
 		margin: 5px 0;
 		font-size: 30px;
 		line-height: 30px;
@@ -891,6 +891,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: -20px;
+	margin-bottom: 65px;
 }
 
 .manufacturer-item {
@@ -920,4 +921,116 @@ body {
 	}
 }
 
+.services {
+	padding-top: 65px;
+	padding-bottom: 64px;
+	background-color: #f4f8f9;
+}
 
+.services-title {
+	margin: 0;
+	margin-bottom: 26px;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.services-desc {
+	margin: 0;
+	margin-bottom: 70px;
+	font-family: "PT Sans Regular", sans-serif;
+}
+
+.services-slider {
+	display: flex;
+	align-items: flex-start;
+}
+
+.services-links {
+	position: relative;
+	margin-right: 80px;
+
+	&::after {
+		position: absolute;
+		content: url(../img/shadow.png);
+		top: 50%;
+		right: 0;
+		width: 10px;
+		height: 272px;
+		margin-top: -136px;
+	}
+}
+
+.services-link {
+	display: block;
+	margin: 0;
+	width: 240px;
+	padding: 14px 22px 16px;
+	font-family: "CuprumBold", sans-serif;
+	font-size: 21px;
+	line-height: 30px;
+	color: #fff;
+	background-color: #32425c;
+	box-shadow: 0 1px #293449, inset 0 1px #405069;
+	cursor: pointer;
+	transition: background-color .25s;
+
+	&:hover {
+		background-color: #293449;
+	}
+
+	&.active {
+		color: #32425c;
+		background-color: #fff;
+		box-shadow: none;
+	}
+}
+
+.services-slider-list {
+	flex-grow: 1;
+}
+
+.services-slider-item {
+	height: 282px;
+
+	h3 {
+		margin: 0;
+		margin-bottom: 22px;
+		font-size: 36px;
+		line-height: 36px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: #32425c;
+	}
+
+	p {
+		margin: 0;
+		margin-bottom: 26px;
+		font-family: "PT Sans Regular", sans-serif;
+	}
+}
+
+.services-delivery {
+	background: url(../img/delivery.png) right bottom no-repeat;
+
+	p {
+		width: 275px;
+	}
+}
+
+.services-guarantee {
+	background: url(../img/guarantee.png) right bottom no-repeat;
+
+	p {
+		width: 375px;
+	}
+}
+
+.services-credit {
+	background: url(../img/credit.png) right bottom no-repeat;
+
+	.btn {
+		padding: 10px 45px;
+	}
+}
