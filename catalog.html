@@ -31,8 +31,6 @@
 				</p>
 				<p class="adds">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 			</div>
-			<!-- <button class="header-info-btn btn-sign-in" type="button">Войти</button>
-			<button class="header-info-btn btn-sign-up" type="button">Регистрация</button> -->
 			<div class="profile">
 				<a class="profile-name" href="user.html">Равшан Джамшутович</a>
 				<a class="sign-out" href="#" aria-label="Выход">
@@ -57,5 +55,46 @@
 		</nav>
 	</div>
 </header>
+
+<main>
+	<div class="container">
+		<ul class="breadcrumbs">
+			<li><a href="index.html" title="На главную страницу" aria-label="На главную страницу">
+				<img src="img/icons/icon-home.svg" alt="На главную страницу" width="15" height="12">
+			</a></li>
+			<li><a href="#">Каталог</a></li>
+			<li><a href="#">Инструмент</a></li>
+			<li class="breadcrumb-current"><a>Перфораторы</a></li>
+		</ul>
+
+		<h1 class="catalog-title">Перфораторы</h1>
+
+		<div class="catalog-columns">
+			<section class="filter">
+				<h3 class="filter-title">Фильтр:</h3>
+				<form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
+					<fieldset class="filter-item filter-item-range">
+						<legend>Цена:</legend>
+						<div class="range-filter">
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="toggle toggle-min"></div>
+								<div class="toggle toggle-max"></div>
+							</div>
+							<div class="price-controls">
+								<label for="min-price" class="visually-hidden">Цена от</label>
+								<input id="min-price" name="min-price" type="text" value="0"> — 
+								<label for="max-price" class="visually-hidden">Цена до</label>
+								<input id="max-price" name="max-price" type="text" value="30000">
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</section>
+		</div>
+	</div>
+</main>
 </body>
 </html>

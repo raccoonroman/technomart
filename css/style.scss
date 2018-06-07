@@ -467,7 +467,7 @@ body {
 .profile-name,
 .sign-out {
 	display: inline-block;
-	margin-bottom: 5px;
+	margin-bottom: 4px;
 	height: 45px;
 	vertical-align: middle;
 	font-size: 21px;
@@ -597,7 +597,7 @@ body {
 
 	a {
 		display: block;
-		padding: 19px 0 24px;
+		padding: 20px 0 23px;
 		font-size: 17px;
 		line-height: 17px;
 		text-align: center;
@@ -1647,5 +1647,135 @@ body {
 
 	&:active {
 		background-color: #ba2732;
+	}
+}
+
+.breadcrumbs {
+	display: flex;
+	padding: 19px 0 16px;
+
+	a {
+		font-family: "PT Sans Regular", sans-serif;
+		text-transform: uppercase;
+		color: #000;
+	}
+
+	li:not(.breadcrumb-current)::after {
+		content: url(../img/icons/icon-right.svg);
+		width: 8px;
+		height: 12px;
+		margin: 0 16px;
+	}
+}
+
+.catalog-title {
+	margin: 0;
+	margin-bottom: 20px;
+	height: 89px;
+	padding: 30px 28px 30px;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #32425c;
+	background-color: #f2f6f8;
+}
+
+.catalog-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.filter {
+	width: 220px;
+	font-family: "PT Sans Regular", sans-serif;
+}
+
+.filter-title {
+	margin: 0;
+	margin-bottom: 11px;
+	padding: 10px 18px;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	background-color: #f7f3ec;
+	border-radius: 3px;
+}
+
+.filter-item {
+	margin: 0;
+	padding: 0;
+	border: none;
+
+	legend {
+		margin-bottom: 14px;
+		font-family: "PT Sans Bold", sans-serif;
+		font-size: 17px;
+		line-height: 30px;
+		text-transform: uppercase;
+	}
+}
+
+.range-controls {
+	position: relative;
+	margin-bottom: 9px;
+	padding: 39px 20px;
+	background-color: #f7f3ec;
+	border-radius: 3px;
+
+	.scale {
+		height: 2px;
+		background-color: #d7dcde;
+
+		.bar {
+			width: 80%;
+			height: 2px;
+			background: #00ca74;
+		}
+	}
+
+	.toggle {
+		position: absolute;
+		top: 30px;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		padding: 0;
+		border: 8px solid #fff;
+		background-color: #ababab;
+		box-shadow: 0 2px 1px 0 #cfcfcf;
+		border-radius: 50%;
+		cursor: pointer;
+
+		&:hover {
+			transform: scale(1.15);
+		}
+	}
+
+	.toggle-min {
+		left: 20px;
+	}
+
+	.toggle-max {
+		left: 160px;
+	}
+}
+
+.price-controls {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 25px;
+	line-height: 38px;
+
+	input {
+		width: 95px;
+		height: 38px;
+		font-size: 17px;
+		line-height: 18px;
+		text-align: center;
+		border: none;
+		border-radius: 3px;
+		background-color: #f7f3ec;
 	}
 }
