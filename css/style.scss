@@ -400,7 +400,7 @@ body {
 	margin: 0;
 	margin-top: 3px;
 	width: 210px;
-	font-family: "CuprumItalic", sans-serif;
+	font-family: "CuprumItalic", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 23px;
 	color: #ee3643;
@@ -649,7 +649,7 @@ body {
 	.offer-item-title {
 		margin: 0;
 		margin-bottom: 12px;
-		font-family: "CuprumBold", sans-serif;
+		font-family: "CuprumBold", "Arial", sans-serif;
 		font-size: 24px;
 		line-height: 30px;
 		color: #fff;
@@ -701,12 +701,12 @@ body {
 	width: 90px;
 	margin: 0;
 	padding: 4px 0 5px;
-	font-family: "PT Sans Regular", sans-serif;
+	font-family: "PT Sans Regular", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	text-align: center;
 	color: #fff;
-	background-color: #ff5357;
+	background-color: #ee3643;
 	-webkit-transform: rotate(45deg);
 			transform: rotate(45deg);
 }
@@ -804,7 +804,7 @@ body {
 	h3 {
 		margin: 0;
 		margin-bottom: 3px;
-		font-family: "CuprumBold", sans-serif;
+		font-family: "CuprumBold", "Arial", sans-serif;
 		font-size: 36px;
 		line-height: 36px;
 		text-transform: uppercase;
@@ -858,6 +858,10 @@ body {
 	animation-duration: 1s;
 }
 
+.manufacturers {
+	padding-top: 1px;
+}
+
 .popular-title {
 	display: flex;
 	justify-content: space-between;
@@ -895,9 +899,9 @@ body {
 	flex-direction: column;
 	width: 220px;
 	min-height: 318px;
-	margin: 0 0 21px 20px;
+	margin: 0 0 20px 20px;
 	padding: 10px 17px 20px; 
-	font-family: "PT Sans Bold", sans-serif;
+	font-family: "PT Sans Bold", "Arial", sans-serif;
 	text-align: center;
 	border: 1px solid #eaeaea;
 	overflow: hidden;
@@ -980,7 +984,7 @@ body {
 		width: 138px;
 		margin: 0 auto 7px;
 		padding: 10px 0;
-		font-family: "CuprumRegular", sans-serif;
+		font-family: "CuprumRegular", "Arial", sans-serif;
 		font-size: 14px;
 		line-height: 18px;
 		text-transform: uppercase;
@@ -1094,7 +1098,7 @@ body {
 .services-desc {
 	margin: 0;
 	margin-bottom: 70px;
-	font-family: "PT Sans Regular", sans-serif;
+	font-family: "PT Sans Regular", "Arial", sans-serif;
 }
 
 .services-slider {
@@ -1122,7 +1126,7 @@ body {
 	margin: 0;
 	width: 240px;
 	padding: 14px 22px 16px;
-	font-family: "CuprumBold", sans-serif;
+	font-family: "CuprumBold", "Arial", sans-serif;
 	font-size: 21px;
 	line-height: 30px;
 	color: #fff;
@@ -1162,7 +1166,7 @@ body {
 	p {
 		margin: 0;
 		margin-bottom: 26px;
-		font-family: "PT Sans Regular", sans-serif;
+		font-family: "PT Sans Regular", "Arial", sans-serif;
 	}
 }
 
@@ -1210,7 +1214,7 @@ body {
 
 	p {
 		margin: 0;
-		font-family: "PT Sans Regular", sans-serif;
+		font-family: "PT Sans Regular", "Arial", sans-serif;
 	}
 
 	p:nth-of-type(1) {
@@ -1263,7 +1267,7 @@ body {
 	p {
 		margin: 0;
 		margin-bottom: 31px;
-		font-family: "PT Sans Regular", sans-serif;
+		font-family: "PT Sans Regular", "Arial", sans-serif;
 	}
 
 	.map-small {
@@ -1442,7 +1446,8 @@ body {
 
 	input, 
 	textarea {
-		padding: 10px;
+		padding: 10px 14px;
+		font-family: "PT Sans Regular", "Arial", sans-serif;
 		border: 2px solid #dee3e4;
 		border-radius: 3px;
 
@@ -1458,28 +1463,24 @@ body {
 
 	input::-webkit-input-placeholder,
 	textarea::-webkit-input-placeholder {
-		font-family: "PT Sans Regular", sans-serif;
 		line-height: 18px;
 		color: #999;
 	}
 
 	input:-ms-input-placeholder,
 	textarea:-ms-input-placeholder {
-		font-family: "PT Sans Regular", sans-serif;
 		line-height: 18px;
 		color: #999;
 	}
 
 	input::-ms-input-placeholder,
 	textarea::-ms-input-placeholder {
-		font-family: "PT Sans Regular", sans-serif;
 		line-height: 18px;
 		color: #999;
 	}
 
 	input::placeholder,
 	textarea::placeholder {
-		font-family: "PT Sans Regular", sans-serif;
 		line-height: 18px;
 		color: #999;
 	}
@@ -1655,7 +1656,7 @@ body {
 	padding: 19px 0 16px;
 
 	a {
-		font-family: "PT Sans Regular", sans-serif;
+		font-family: "PT Sans Regular", "Arial", sans-serif;
 		text-transform: uppercase;
 		color: #000;
 	}
@@ -1687,8 +1688,9 @@ body {
 }
 
 .filter {
+	margin-right: 20px;
 	width: 220px;
-	font-family: "PT Sans Regular", sans-serif;
+	font-family: "PT Sans Regular", "Arial", sans-serif;
 	text-transform: uppercase;
 }
 
@@ -1935,5 +1937,140 @@ body {
 
 	&:active {
 		border-color: #ee3643;
+	}
+}
+
+.catalog-perforators {
+	width: 700px;
+}
+
+.filter-sort {
+	display: flex;
+	margin-bottom: 20px;
+	padding: 11px 17px 11px 19px;
+	font-family: "PT Sans Regular", "Arial", sans-serif;
+	line-height: 15px;
+	text-transform: uppercase;
+	background-color: #f7f3ec;
+	border-radius: 3px;
+
+	p {
+		margin: 0;
+	}
+
+	ul {
+		display: flex;
+		margin-left: auto;
+	}
+
+	li {
+		margin-left: 68px;
+	}
+
+	li:nth-last-child(1) {
+		margin-left: 21px;
+	}
+
+	li:nth-last-child(2) {
+		margin-left: 46px;
+	}
+
+	a:not(.arrow) {
+		display: block;
+		color: rgba(0, 0, 0, .3);
+		border-bottom: 1px dotted #ee3643;
+
+		&:hover,
+		&:focus {
+			color: #000;
+			border-bottom: 1px solid #ee3643;
+		}
+
+		&.active,
+		&:active {
+			color: #ee3643;
+			border: none;
+		}
+	}
+
+	.arrow {
+		display: block;
+		font-size: 0;
+		line-height: 0;
+	}
+
+	.arrow::before {
+		content: "";
+		display: block;
+		margin-top: 2px;
+		border: 11px solid #c5c5c5;
+		border-right-width: 5.5px;
+		border-left-width: 5.5px;
+		border-right-color: transparent;
+		border-left-color: transparent;
+	}
+
+	.arrow-bottom::before {
+		border-bottom-width: 0;
+	}
+
+	.arrow-top::before {
+		border-top-width: 0;
+	}
+
+	.arrow:hover::before,
+	.arrow:focus::before {
+		border-bottom-color: #000;
+		border-top-color: #000;
+	}
+
+	.arrow.active::before,
+	.arrow:active::before {
+		border-bottom-color: #ee3643;
+		border-top-color: #ee3643;
+	}
+}
+
+.pagination-list {
+	display: flex;
+	margin-top: 32px;
+	margin-bottom: 60px;
+	font-family: "PT Sans Regular", "Arial", sans-serif;
+}
+
+.pagination-item {
+	margin-right: 9px;
+
+	&:last-child a {
+		padding: 6px 31px;
+	}
+
+	a {
+		display: block;
+		padding: 6px 15px;
+		text-transform: uppercase;
+		color: #000;
+		border: 1px solid #e5e5e5;
+		border-radius: 3px;
+
+		&:hover,
+		&:focus {
+			border-color: #bdc6ca;
+		}
+
+		&:active {
+			border-color: #ee3643;
+		}
+	}
+
+	.active {
+		color: #fff;
+		background-color: #ee3643;
+		border-color: #ee3643;
+
+		&:hover {
+			background-color: #ee3643;
+			border-color: #ee3643;
+		}
 	}
 }
